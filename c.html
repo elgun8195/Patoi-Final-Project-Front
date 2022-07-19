@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Owl-Carousel Slider | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="./assets/css/c.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="carousel owl-carousel">
+            <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories1.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+              <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories2.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+              <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories3.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+              <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories4.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+              <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories5.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+              <div class="card" >
+                
+                <div class="single-categories-box">
+                  <a href="shop-grid.html" class="d-block">
+                      <img src="./assets/images/categories6.jpg" alt="categories-image">
+                      <h3>Cat toys</h3>
+                  </a>
+                </div>          
+            
+              </div>
+         </div>
+      </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 1000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             330:{
+               items:2,
+               nav: false
+             },
+             660:{
+               items:3,
+               nav: false
+             },
+             1000:{
+               items:4,
+               nav: false
+             }
+           }
+         });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+  width: 100%;
+}
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card{
+    width: 239.2px;
+    margin-right: 25px;
+    
+}
+.single-categories-box a{
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    outline: 0 !important;
+}
+.single-categories-box a img{
+    margin-bottom: 15px;
+    transition: 0.5s;
+    max-width: 100%;
+    height: auto;
+}
+.card .single-categories-box a h3{
+    color:black;
+    font-weight: 700;
+    font-family: "Fredoka One", cursive;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+/* .carousel .card-1{
+  background: #ed1c24;
+}
+.carousel .card-2{
+  background: #0072bc;
+}
+.carousel .card-3{
+  background: #39b54a;
+}
+.carousel .card-4{
+  background: #f26522;
+}
+.carousel .card-5{
+  background: #630460;
+} */
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #0072bc!important;
+}

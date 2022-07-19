@@ -1,0 +1,23 @@
+.pb-75 {
+  padding-bottom: 75px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.offer-area {
+  .single-offer-box {
+    margin-bottom: 25px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: 0.5s;
+    }
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
+  }
+}
