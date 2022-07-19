@@ -1,0 +1,143 @@
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .main-banner-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .main-banner-area {
+        padding: {
+            top: 60px;
+            bottom: 40px;
+        };
+        .container-fluid {
+            max-width: 100%;
+        }
+    }
+    .main-banner-content {
+        text-align: center;
+
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h1 {
+            margin-bottom: 12px;
+            font-size: 30px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .main-banner-image {
+        margin-top: 20px;
+
+        img {
+            &:nth-child(2), &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (max-width: 991px){
+    .main-banner-area {
+        padding: {
+            top: 80px;
+            bottom: 40px;
+        };
+        .container-fluid {
+            max-width: 720px;
+        }
+    }
+    .main-banner-content {
+        text-align: center;
+        .sub-title{
+            text-align: center;
+        }
+            h1 {
+                text-align: center;
+                font-size: 45px;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+            }
+            .default-btn {
+                margin-top: 0;
+                text-align: center;
+            }
+        
+    }
+    .main-banner-image {
+        padding-left: 90px;
+
+        img {
+            &:nth-child(2) {
+                left: 0;
+                bottom: 40px;
+                width: 160px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+    .main-banner-area {
+        .container-fluid {
+            max-width: 960px;
+        }
+    }
+    .main-banner-content {
+        h1 {
+            font-size: 52px;
+        }
+    }
+    .main-banner-image {
+        img {
+            &:nth-child(2) {
+                width: 240px;
+            }
+            &:nth-child(3) {
+                top: 140px;
+                width: 180px;
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .main-banner-area {
+        .container-fluid {
+            max-width: 1140px;
+        }
+    }
+    .main-banner-content {
+        h1 {
+            font-size: 64px;
+        }
+    }
+    .main-banner-image {
+        img {
+            &:nth-child(3) {
+                width: 250px;
+            }
+        }
+    }
+}
