@@ -4,19 +4,27 @@
 .pt-100 {
   padding-top: 100px;
 }
-
+a{
+  text-decoration: none !important;
+}
 .categories-area {
   .section-title {
     margin-bottom: 40px;
+    text-align: center;
+    margin-top: -6px;
+    h2 {
+      margin-bottom: 0;
+      font-size: 35px;
+      color: black;
+      font-weight: 700;
+      font-family: "Fredoka One", cursive;
+    }
   }
-  .categories-box {
-    margin-top: 10px;
-  }
+
   .wrapper {
-    min-height: 100vh;
     align-items: center;
     display: flex;
-  width: 100%;
+    width: 100%;
 
     .carousel {
       max-width: 1200px;
@@ -33,21 +41,7 @@
         border-radius: 10px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
       }
-      .card-1 {
-        background: #ed1c24;
-      }
-      .card-2 {
-        background: #ed1c24;
-      }
-      .card-3 {
-        background: #ed1c24;
-      }
-      .card-4 {
-        background: #ed1c24;
-      }
-      .card-5 {
-        background: #ed1c24;
-      }
+      
     }
   }
 }
@@ -59,13 +53,19 @@
   margin-bottom: 25px;
   text-align: center;
   margin-top: 10px;
-  img {
-    margin-bottom: 15px;
-    transition: 0.5s;
-  }
-  h3 {
-    font-size: 18px;
-    margin-bottom: 0;
+  a{
+
+    img {
+      margin-bottom: 15px;
+      transition: 0.5s;
+    }
+    h3 {
+      font-size: 18px;
+      margin-bottom: 0;
+      color: black;
+      font-weight: 700;
+      font-family: "Fredoka One", cursive;
+    }
   }
   span {
     display: block;
@@ -80,14 +80,10 @@
 }
 .categories-slides {
   .owl-stage-outer {
-    margin: {
-      left: -10px;
-      right: -10px;
-    }
-    padding: {
-      left: 10px;
-      right: 10px;
-    }
+    margin-left: -9px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
   }
   .owl-nav {
     margin-top: 0;
@@ -128,22 +124,10 @@
   }
 }
 
+.owl-prev{
+  font-size: 32px !important;
+}
+.owl-next{
+  font-size: 32px !important;
 
-.owl-dots{
-    text-align: center;
-    margin-top: 40px;
-  }
-  .owl-dot{
-    height: 15px;
-    width: 45px;
-    margin: 0 5px;
-    outline: none;
-    border-radius: 14px;
-    border: 2px solid #0072bc!important;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-  }
-  .owl-dot.active,
-  .owl-dot:hover{
-    background: #0072bc!important;
-  }
+}

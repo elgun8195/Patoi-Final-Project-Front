@@ -1,0 +1,35 @@
+.pb-75 {
+  padding-bottom: 75px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.brands {
+  .section-title {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: -6px;
+    h2 {
+      margin-bottom: 0;
+      font-size: 35px;
+      color: black;
+      font-weight: 700;
+      font-family: "Fredoka One", cursive;
+    }
+  }
+  .single-brands-box {
+    margin-bottom: 25px;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: 0.5s;
+    }
+    &:hover {
+      img {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
