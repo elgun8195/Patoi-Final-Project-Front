@@ -1,129 +1,36 @@
-<!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Responsive Owl-Carousel Slider | CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/c.css" />
-  </head>
-  <body>
-    <div
-      class="wrapper categories-slides owl-carousel owl-theme owl-loaded owl-drag"
-    >
-      <div class="owl-stage-outer">
-        <div class="carousel owl-carousel owl-stage">
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories1.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories2.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories3.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories4.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories5.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="single-categories-box">
-              <a href="shop-grid.html" class="d-block">
-                <img
-                  src="./assets/images/categories6.jpg"
-                  alt="categories-image"
-                />
-                <h3>Cat toys</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="bx bx-chevron-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="bx bx-chevron-right"></i></button></div><div class="owl-dots disabled"></div></div>
-      </div>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>JQuery Countdown JS</title>
+</head>
+<body>
 
-      
-    </div>
-    <script>
-      $(".carousel").owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: false,
-        dots:false,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true,
-          },
-          330: {
-            items: 2,
-            nav: true,
-          },
-          660: {
-            items: 3,
-            nav: true,
-          },
-          1000: {
-            items: 4,
-            nav: true,
-          },
-        },
-      });
-    </script>
-  </body>
+<div class="first-counter" data-date="2021-06-08 10:20:30"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss  -->
+	<div><span class="counter-days"></span> Days</div>
+	<div><span class="counter-hours"></span> Hours</div>
+	<div><span class="counter-minutes"></span> Minutes</div>
+	<div><span class="counter-seconds"></span> Seconds</div>
+</div>
+
+<hr>
+
+<div class="second-counter" data-date="2023-06-28 00:00:00"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
+	<div><span class="counter-days"></span> Days</div>
+	<div><span class="counter-hours"></span> Hours</div>
+	<div><span class="counter-minutes"></span> Minutes</div>
+	<div><span class="counter-seconds"></span> Seconds</div>
+</div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="./assets/js/c.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		loopcounter('first-counter');
+		loopcounter('second-counter');
+	});
+</script>
 </html>

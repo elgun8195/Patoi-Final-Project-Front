@@ -1150,6 +1150,142 @@
   padding: 30px;
   background-color: #f6f7fb;
 }
+.products-area .offer-box .image img {
+  max-width: 100%;
+  height: auto;
+}
+.products-area .offer-box .content h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  font-family: "Fredoka One", cursive;
+}
+.products-area .offer-box .content h3 a {
+  transition: 0.5s;
+  color: black;
+  text-decoration: none;
+  outline: 0 !important;
+}
+.products-area .offer-box .content .price {
+  color: black;
+  font-size: 13px;
+  font-family: "Fredoka One", cursive;
+}
+.products-area .offer-box .content .rating {
+  margin-top: 9px;
+}
+.products-area .offer-box .content .rating i {
+  color: #facb11;
+  font-size: 12px;
+}
+.products-area .offer-box .content p {
+  color: #808292;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.products-area .offer-box .content .discount {
+  color: #259cd8;
+}
+.products-area .offer-box .content .counter-class {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  display: flex !important;
+}
+.products-area .offer-box .content .counter-class div {
+  width: 60px;
+  height: 60px;
+  padding-top: 9px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  color: black;
+  background-color: #facb11;
+  font-weight: 600;
+  font-size: 13px;
+}
+.products-area .offer-box .content .counter-class div span {
+  display: block;
+  font-size: 17px;
+  font-font-family: "Fredoka One", cursive;
+}
+.products-area .offer-box .content .counter-class div:last-child {
+  margin-right: 0;
+}
+.products-area .offer-box .content .default-btn {
+  border: 0;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  padding: 11px 30px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  color: white;
+  transition: 0.5s;
+  background-color: #259cd8;
+  font-size: 13px;
+  font-font-family: "Fredoka One", cursive;
+}
+.products-area .offer-box .content .default-btn::before {
+  top: 0;
+  left: 0;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.products-area .offer-box .content .default-btn::after {
+  top: 0;
+  left: 50%;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.products-area .offer-box .content .default-btn span {
+  display: block;
+}
+.products-area .offer-box .content .default-btn span::before {
+  bottom: 0;
+  height: 0;
+  left: 25%;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.products-area .offer-box .content .default-btn span::after {
+  bottom: 0;
+  left: 75%;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.products-area .offer-box .content .default-btn:hover {
+  color: white;
+  background-color: #259cd8;
+}
+.products-area .offer-box .content .default-btn:hover::before, .products-area .offer-box .content .default-btn:hover::after {
+  height: 100%;
+}
+.products-area .offer-box .content .default-btn:hover span::before, .products-area .offer-box .content .default-btn:hover span::after {
+  height: 100%;
+}
 .products-area .single-products-box {
   margin-bottom: 25px;
 }
@@ -1246,37 +1382,37 @@
 .products-area .single-products-box .image .products-button li a:hover i {
   color: white;
 }
-.products-area .single-products-box .p-content {
+.products-area .single-products-box .content {
   margin-top: 20px;
 }
-.products-area .single-products-box .p-content h3 {
+.products-area .single-products-box .content h3 {
   margin-bottom: 12px;
   font-size: 18px;
   color: black;
   font-weight: 700;
   font-family: "Fredoka One", cursive;
 }
-.products-area .single-products-box .p-content h3 a {
+.products-area .single-products-box .content h3 a {
   transition: 0.5s;
   color: black;
   text-decoration: none;
   outline: 0 !important;
 }
-.products-area .single-products-box .p-content .price {
+.products-area .single-products-box .content .price {
   color: black;
   font-size: 13px;
 }
-.products-area .single-products-box .p-content .price .new-price {
+.products-area .single-products-box .content .price .new-price {
   font-family: "Fredoka One", cursive;
 }
-.products-area .single-products-box .p-content .price .old-price {
+.products-area .single-products-box .content .price .old-price {
   color: #808292;
   text-decoration: line-through;
 }
-.products-area .single-products-box .p-content .rating {
+.products-area .single-products-box .content .rating {
   margin-top: 9px;
 }
-.products-area .single-products-box .p-content .rating i {
+.products-area .single-products-box .content .rating i {
   color: #facb11;
   font-size: 12px;
 }
@@ -1287,6 +1423,34 @@
   opacity: 1;
   bottom: 20px;
   visibility: visible;
+}
+
+.facility-inner {
+  padding: 100px 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.facility-inner .col-lg-3 {
+  border-right: 1px solid white;
+}
+.facility-inner .col-lg-3:last-child {
+  border-right: none;
+}
+.facility-inner .single-facility-box {
+  text-align: center;
+}
+.facility-inner .single-facility-box img {
+  margin-bottom: 18px;
+  max-width: 100%;
+  height: auto;
+}
+.facility-inner .single-facility-box h3 {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  font-family: "Fredoka One", cursive;
 }
 
 .pb-75 {
