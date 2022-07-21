@@ -1,8 +1,8 @@
-jQuery(document).ready(function($){
+$(document).ready(function(){	
 	window.loopcounter = function( idWarp ) {
-		if(typeof idWarp!= 'undefined'){
-			var date = $('.'+idWarp).data('date');
-			if(typeof date != 'undefined'){
+		if(typeof idWarp!= "undefined"){
+			var date = $("."+idWarp).data("date");
+			if(typeof date != "undefined"){
 				var start = new Date( date.replace(/-/g, "/") ),
 			    end   = new Date(),
 			    diff  = new Date( start - end ),
@@ -41,19 +41,27 @@ jQuery(document).ready(function($){
 
 				function counterDate(id,day,hour,min,sec){
 					if (time < 0) { day = hour = min = sec = 0; }
-					$( '.'+id+' .counter-days').html( counterDoubleDigit(day) );
-					$( '.'+id+' .counter-hours').html( counterDoubleDigit(hour) );
-					$( '.'+id+' .counter-minutes').html( counterDoubleDigit(min) );
-					$( '.'+id+' .counter-seconds').html( counterDoubleDigit(sec) );
+					$( "."+id+" .counter-days").html( counterDoubleDigit(day) );
+					$( "."+id+" .counter-hours").html( counterDoubleDigit(hour) );
+					$( "."+id+" .counter-minutes").html( counterDoubleDigit(min) );
+					$( "."+id+" .counter-seconds").html( counterDoubleDigit(sec) );
 				}
 				function counterDoubleDigit( arg ){
 					if( arg.toString().length <= 1 ){
-						arg = ('0' + arg).slice(-2);
+						arg = ("0" + arg).slice(-2);
 					}
 					return arg;
 				}
 			}
 		}
     }
-//loopcounter( 'counter-id' );
-});
+	$(window).on("scroll", function(){
+	  var scrolled = $(window).scrollTop();
+	  if (scrolled > 600) $(".go-top").addClass("active");
+	  if (scrolled < 600) $(".go-top").removeClass("active");
+	});  
+	// Click Event
+	$(".go-top").on("click", function() {
+	  $("html, body").animate({ scrollTop: "0" },  500);
+	});
+  });
