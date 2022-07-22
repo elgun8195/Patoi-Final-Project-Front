@@ -2103,6 +2103,108 @@ a {
   }
 }
 /* Min width 1550px */
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.not-found-area {
+  border-top: 1px solid #eeeeee;
+}
+.not-found-area .not-found-content {
+  text-align: center;
+}
+.not-found-area .not-found-content h3 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 700;
+  font-family: "Fredoka One", cursive;
+}
+.not-found-area .not-found-content p {
+  max-width: 500px;
+  font-size: 17px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #808292 !important;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+.not-found-area .not-found-content .default-btn {
+  margin-top: 10px;
+  border: 0;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  padding: 11px 30px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  color: white;
+  transition: 0.5s;
+  background-color: #259cd8;
+  font-size: 13px;
+  font-family: "Fredoka One", cursive;
+}
+.not-found-area .not-found-content .default-btn::before {
+  top: 0;
+  left: 0;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.not-found-area .not-found-content .default-btn::after {
+  top: 0;
+  left: 50%;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.not-found-area .not-found-content .default-btn span {
+  display: block;
+}
+.not-found-area .not-found-content .default-btn span::before {
+  bottom: 0;
+  height: 0;
+  left: 25%;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.not-found-area .not-found-content .default-btn span::after {
+  bottom: 0;
+  left: 75%;
+  height: 0;
+  content: "";
+  z-index: -1;
+  width: 25.25%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  background-color: black;
+}
+.not-found-area .not-found-content .default-btn:hover {
+  color: white;
+  background-color: #259cd8;
+}
+.not-found-area .not-found-content .default-btn:hover::before, .not-found-area .not-found-content .default-btn:hover::after {
+  height: 100%;
+}
+.not-found-area .not-found-content .default-btn:hover span::before, .not-found-area .not-found-content .default-btn:hover span::after {
+  height: 100%;
+}
+
 * {
   margin: 0%;
   padding: 0%;
