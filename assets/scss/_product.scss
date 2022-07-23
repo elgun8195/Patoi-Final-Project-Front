@@ -204,3 +204,125 @@
       }
   }
 }
+
+.patoi-grid-sorting {
+  margin-bottom: 30px;
+  a{
+    transition: 0.5s;
+    color: black;
+    text-decoration: none;
+    outline: 0 !important;
+  }
+
+  .result-count {
+      p {
+          .count {
+              font-weight: 600;
+              color:black;
+          }
+          color: $secondary-color;
+    font-size: 16px;
+    line-height: 1.7;
+      }
+  }
+  .ordering {
+      text-align: end;
+
+      label {
+          display: inline-block;
+          color: $secondary-color;
+          margin: {
+              right: 5px;
+              bottom: 0;
+          };
+      }
+      select {
+          width: 215px;
+          cursor: pointer;
+          background: #f8f8f8;
+          display: inline-block;
+          border-color: #eeeeee;
+          color:black;
+          transition:0.5s;
+          padding: 0 0 0 5px;
+          line-height: 45px;
+          height: 45px;
+          font: {
+              size: 16px;
+              weight: 600;
+          };
+          &:hover {
+              border-color:$primary-color;
+              background-color: transparent;
+          }
+      }
+  }
+  .sidebar-filter {
+      font-weight: 600;
+      margin-right: 15px;
+      position: relative;
+      border-right: 1.5px solid #eeeeee;
+      padding: {
+          left: 20px;
+          right: 15px;
+      };
+      i {
+          left: 0;
+          top: 4px;
+          position: absolute;
+      }
+  }
+
+
+}
+.pagination-area {
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #eeeeee;
+
+  .nav-links {
+      display: flex;
+      align-items: center;
+  }
+}
+.page-numbers {
+    width: 45px;
+    height: 45px;
+    border: none;
+    display: block;
+    line-height: 45px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    color:gray;
+    transition:0.5s;
+    background: linear-gradient(180deg, #ffffff 0%, #eaeef3 100%);
+    box-shadow: 0 5px 15px 0 rgba(107, 124, 147, .15), 0 2px 4px 0 rgba(107, 124, 147, .20), inset 0 -2px 0 0 #c2cfde;
+    font: {
+        size: 15px;
+        weight: 700;
+    };
+    margin: {
+        left: 5px;
+        right: 5px;
+    };
+    &.next {
+        margin-left: auto;
+    }
+    &.previous {
+        margin-right: auto;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+    &.current {
+        background: var(--whiteColor);
+        color: $primary-color;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}

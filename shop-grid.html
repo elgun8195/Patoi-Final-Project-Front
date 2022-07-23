@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,6 +19,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css"
     />
     <link
       rel="stylesheet"
@@ -29,22 +35,34 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Titillium+Web:wght@200&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Patoi - Pet Care Shop</title>
     <link rel="icon" type="image/png" href="./assets/images/logo.png" />
   </head>
-
   <body>
     <!-- Start Top Header Area -->
 
     <div class="top-header-area">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <p>FREE 5 days shipping over $99</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-5 col-md-5 col-sm-6">
+            <div class="search-box">
+              <form>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Enter your keywords..."
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
             <ul>
               <li>
                 <a href="#" target="_blank">
@@ -469,226 +487,80 @@
     <!-- Navbar End -->
 
     <!-- Search Area -->
-    <div class="search-overlay ">
+    <div class="search-overlay">
       <div class="d-table">
-          <div class="d-table-cell">
-              <div class="search-overlay-layer"></div>
-              <div class="search-overlay-layer"></div>
-              <div class="search-overlay-layer"></div>
-              <div class="search-overlay-close">
-                  <span class="search-overlay-close-line"></span>
-                  <span class="search-overlay-close-line"></span>
-              </div>
-              <div class="search-overlay-form">
-                  <form>
-                      <input type="text" class="input-search" placeholder="Enter your keywords...">
-                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </form>
-              </div>
+        <div class="d-table-cell">
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-close">
+            <span class="search-overlay-close-line"></span>
+            <span class="search-overlay-close-line"></span>
           </div>
+          <div class="search-overlay-form">
+            <form>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Enter your keywords..."
+              />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-  </div>
-<!-- Search Area -->
+    </div>
+    <!-- Search Area -->
+
     <main>
-      <!-- Banner Area  -->
-      <section id="banner">
-        <div
-          class="main-banner-area"
-          style="background: url(assets/images/banners/banners/banner-bg.jpg)"
-        >
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-12">
-                <div class="main-banner-content">
-                  <span class="sub-title">Welcome to Patoi</span>
-                  <h1>We provide best pet products</h1>
-                  <p>Save 20% off your first order</p>
-                  <a href="shop-grid.html" class="default-btn">
-                    <span>Shop Now</span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="main-banner-image">
-                  <img
-                    src="./assets/images/banners/banner1.png"
-                    alt="banner-image"
-                  />
-                  <img
-                    src="./assets/images/banners/banner2.png"
-                    alt="banner-image"
-                  />
-                  <img
-                    src="./assets/images/banners/banner3.png"
-                    alt="banner-image"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Banner Area -->
-
-      <!-- Offer Area -->
-
-      <section id="offer">
-        <div class="offer-area pt-100 pb-75">
+      <section id="page-title">
+        <div class="page-title-area">
           <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-4">
-                <div class="single-offer-box">
-                  <a href="" class="d-block">
-                    <img src="./assets/images/offers/offer1.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4">
-                <div class="single-offer-box">
-                  <a href="" class="d-block">
-                    <img src="./assets/images/offers/offer2.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4">
-                <div class="single-offer-box">
-                  <a href="" class="d-block">
-                    <img src="./assets/images/offers/offer3.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
+            <div class="page-title-content">
+              <h1>Shop Grid</h1>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class="fa-solid fa-angle-right"></i> Shop Grid</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Offer Area -->
-
-      <!-- Category Area -->
-
-      <section id="category">
-        <div class="categories-area pb-75">
-          <div class="container">
-            <div class="section-title">
-              <h2>Shop by Categories</h2>
-            </div>
-            <div
-              class="categories-slides owl-carousel owl-theme owl-loaded owl-drag"
-            >
-              <div class="owl-stage-outer">
-                <div class="owl-stage">
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories1.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Dog food</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories2.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Cat food</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories3.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Pet accessories</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories4.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Dry food</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories4.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Dry food</h3>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 239.2px; margin-right: 25px"
-                  >
-                    <div class="single-categories-box">
-                      <a href="shop-grid.html" class="d-block">
-                        <img
-                          src="./assets/images/categories/categories4.jpg"
-                          alt="categories-image"
-                        />
-                        <h3>Dry food</h3>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-nav">
-                <button
-                  type="button"
-                  role="presentation"
-                  class="owl-prev"
-                ></button
-                ><button
-                  type="button"
-                  role="presentation"
-                  class="owl-next"
-                ></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Category Area -->
 
       <!-- Product Area  -->
       <section id="product">
-        <div class="products pb-75">
+        <div class="products ptb-100">
           <div class="container">
-            <div class="section-title">
-              <h2>New Arrivals</h2>
+            <div class="patoi-grid-sorting row align-items-center">
+              <div class="col-lg-6 col-md-6 result-count">
+                <div class="d-flex align-items-center">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#productsFilterModal"
+                    class="sidebar-filter mb-3"
+                    ><i class="fa-solid fa-filter"></i> Filter</a
+                  >
+                  <p>
+                    We found <span class="count">12</span> products available
+                    for you
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 ordering">
+                <div class="select-box">
+                  <label>Sort By:</label>
+                  <select>
+                    <option>Default</option>
+                    <option>Popularity</option>
+                    <option>Latest</option>
+                    <option>Price: low to high</option>
+                    <option>Price: high to low</option>
+                  </select>
+                </div>
+              </div>
             </div>
             <div class="row justify-content-center">
               <div class="col-lg-3 col-md-6 col-sm-6">
@@ -1104,731 +976,34 @@
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="pagination-area">
+                  <div class="nav-links d-flex">
+                    <a
+                      href="shop-grid.html"
+                      class="previous page-numbers"
+                      title="Next Page"
+                      ><i class="fa-solid fa-angle-left"></i
+                    ></a>
+                    <span class="page-numbers current">1</span>
+                    <a href="shop-grid.html" class="page-numbers">2</a>
+                    <a href="shop-grid.html" class="page-numbers">3</a>
+                    <a
+                      href="shop-grid.html"
+                      class="next page-numbers"
+                      title="Next Page"
+                      ><i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Product Area  -->
-
-      <!-- Offer Area -->
-      <section id="offers">
-        <div class="offer-area pb-75">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-6">
-                <div class="single-offer-box">
-                  <a href="" class="d-block">
-                    <img src="./assets/images/offers/offer4.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <div class="single-offer-box">
-                  <a href="" class="d-block">
-                    <img src="./assets/images/offers/offer5.jpg" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Offer Area -->
-
-      <!-- Best Seller Area -->
-      <section id="best-seller">
-        <div class="products-area pb-75">
-          <div class="container">
-            <div class="section-title">
-              <h2>Best Sellers</h2>
-            </div>
-            <div
-              class="products-slides owl-carousel owl-theme owl-loaded owl-drag"
-            >
-              <div class="owl-stage-outer">
-                <div class="owl-stage">
-                  <div
-                    class="owl-item"
-                    style="width: 305.25px; margin-right: 25px"
-                  >
-                    <div class="single-products-box">
-                      <div class="image">
-                        <a href="products-details.html" class="d-block">
-                          <img
-                            src="./assets/images/products/products10.jpg"
-                            alt="products-image"
-                          />
-                        </a>
-                        <ul class="products-button">
-                          <li>
-                            <a href="cart.html"
-                              ><i class="fa-solid fa-cart-shopping"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="wishlist.html"
-                              ><i class="fa-solid fa-heart"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#productsQuickView"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="products-details.html"
-                              ><i class="fa-solid fa-link"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3>
-                          <a href="products-details.html"
-                            >Pink ceramic cat bowl</a
-                          >
-                        </h3>
-                        <div class="price">
-                          <span class="new-price">$39.00</span>
-                        </div>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 305.25px; margin-right: 25px"
-                  >
-                    <div class="single-products-box">
-                      <div class="image">
-                        <a href="products-details.html" class="d-block">
-                          <img
-                            src="./assets/images/products/products11.jpg"
-                            alt="products-image"
-                          />
-                        </a>
-                        <ul class="products-button">
-                          <li>
-                            <a href="cart.html"
-                              ><i class="fa-solid fa-cart-shopping"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="wishlist.html"
-                              ><i class="fa-solid fa-heart"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#productsQuickView"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="products-details.html"
-                              ><i class="fa-solid fa-link"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <span class="sold">Sold!</span>
-                      </div>
-                      <div class="content">
-                        <h3><a href="products-details.html">Red dog bed</a></h3>
-                        <div class="price">
-                          <span class="new-price">$125.00</span>
-                          <span class="old-price">$145.00</span>
-                        </div>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star-half"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 305.25px; margin-right: 25px"
-                  >
-                    <div class="single-products-box">
-                      <div class="image">
-                        <a href="products-details.html" class="d-block">
-                          <img
-                            src="./assets/images/products/products10.jpg"
-                            alt="products-image"
-                          />
-                        </a>
-                        <ul class="products-button">
-                          <li>
-                            <a href="cart.html"
-                              ><i class="fa-solid fa-cart-shopping"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="wishlist.html"
-                              ><i class="fa-solid fa-heart"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#productsQuickView"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="products-details.html"
-                              ><i class="fa-solid fa-link"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3>
-                          <a href="products-details.html"
-                            >Pink ceramic cat bowl</a
-                          >
-                        </h3>
-                        <div class="price">
-                          <span class="new-price">$39.00</span>
-                        </div>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 305.25px; margin-right: 25px"
-                  >
-                    <div class="single-products-box">
-                      <div class="image">
-                        <a href="products-details.html" class="d-block">
-                          <img
-                            src="./assets/images/products/products11.jpg"
-                            alt="products-image"
-                          />
-                        </a>
-                        <ul class="products-button">
-                          <li>
-                            <a href="cart.html"
-                              ><i class="fa-solid fa-cart-shopping"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="wishlist.html"
-                              ><i class="fa-solid fa-heart"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#productsQuickView"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="products-details.html"
-                              ><i class="fa-solid fa-link"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <span class="sold">Sold!</span>
-                      </div>
-                      <div class="content">
-                        <h3><a href="products-details.html">Red dog bed</a></h3>
-                        <div class="price">
-                          <span class="new-price">$125.00</span>
-                          <span class="old-price">$145.00</span>
-                        </div>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star-half"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 305.25px; margin-right: 25px"
-                  >
-                    <div class="single-products-box">
-                      <div class="image">
-                        <a href="products-details.html" class="d-block">
-                          <img
-                            src="./assets/images/products/products11.jpg"
-                            alt="products-image"
-                          />
-                        </a>
-                        <ul class="products-button">
-                          <li>
-                            <a href="cart.html"
-                              ><i class="fa-solid fa-cart-shopping"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="wishlist.html"
-                              ><i class="fa-solid fa-heart"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-bs-toggle="modal"
-                              data-bs-target="#productsQuickView"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="products-details.html"
-                              ><i class="fa-solid fa-link"></i
-                            ></a>
-                          </li>
-                        </ul>
-                        <span class="sold">Sold!</span>
-                      </div>
-                      <div class="content">
-                        <h3><a href="products-details.html">Red dog bed</a></h3>
-                        <div class="price">
-                          <span class="new-price">$125.00</span>
-                          <span class="old-price">$145.00</span>
-                        </div>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star-half"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="owl-nav">
-                    <button
-                      type="button"
-                      role="presentation"
-                      class="owl-prev"
-                    ></button>
-                    <button
-                      type="button"
-                      role="presentation"
-                      class="owl-next"
-                    ></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Best Seller Area -->
-
-      <!-- Offer Area -->
-
-      <section id="offer2">
-        <div class="offer-area pb-75">
-          <div class="container">
-            <div class="single-offer-box">
-              <a href="shop-grid.html" class="d-block">
-                <img src="./assets/images/offers/offer6.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Offer Area -->
-
-      <!-- Brands Area -->
-      <section id="brands">
-        <div class="brands pb-75">
-          <div class="container">
-            <div class="section-title">
-              <h2>Top Brands</h2>
-            </div>
-            <div class="row justify-content-center align-items-center">
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands1.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands2.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands3.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands4.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands5.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 col-4">
-                <div class="single-brands-box">
-                  <a href="shop-grid.html" class="d-block">
-                    <img
-                      src="./assets/images/brands/brands6.png"
-                      alt="brands"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Brands Area -->
-
-      <!-- Special Offers -->
-
-      <section id="special-offers">
-        <div class="products-area pb-75">
-          <div class="container">
-            <div class="section-title">
-              <h2>Special Offers</h2>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                <div class="offer-box">
-                  <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                      <div class="image">
-                        <img
-                          src="./assets/images/offers/offer7.png"
-                          alt="offer-image"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="content">
-                        <h3>
-                          <a href="products-details.html">Premium lamb rice</a>
-                        </h3>
-                        <span class="price">$240.00</span>
-                        <div class="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>
-                          Lorem ipsum dolor sit amet, consec tetur adipiscing
-                          elit, sed do eiusmod tempor.
-                        </p>
-                        <h3>Place an order now</h3>
-                        <span class="discount">Enjoy 30% OFF</span>
-                        <div
-                          class="counter-class"
-                          data-date="2023-06-28 10:00:00"
-                        >
-                          <div><span class="counter-days"></span> Days</div>
-                          <div><span class="counter-hours"></span> Hours</div>
-                          <div>
-                            <span class="counter-minutes"></span> Minutes
-                          </div>
-                          <div>
-                            <span class="counter-seconds"></span> Seconds
-                          </div>
-                        </div>
-                        <a href="shop-grid.html" class="default-btn"
-                          ><span>Shop Now</span></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                <div class="single-products-box">
-                  <div class="image">
-                    <a href="products-details.html" class="d-block">
-                      <img
-                        src="./assets/images/products/products13.jpg"
-                        alt="products-image"
-                      />
-                    </a>
-                    <ul class="products-button">
-                      <li>
-                        <a href="cart.html"
-                          ><i class="fa-solid fa-cart-shopping"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="wishlist.html"
-                          ><i class="fa-solid fa-heart"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#productsQuickView"
-                          ><i class="fa-solid fa-eye"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="products-details.html"
-                          ><i class="fa-solid fa-link"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="content">
-                    <h3>
-                      <a href="products-details.html">Premium beef rice</a>
-                    </h3>
-                    <div class="price">
-                      <span class="new-price">$139.00</span>
-                      <span class="old-price">$200.00</span>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                <div class="single-products-box">
-                  <div class="image">
-                    <a href="products-details.html" class="d-block">
-                      <img
-                        src="./assets/images/products/products14.jpg"
-                        alt="products-image"
-                      />
-                    </a>
-                    <ul class="products-button">
-                      <li>
-                        <a href="cart.html"
-                          ><i class="fa-solid fa-cart-shopping"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="wishlist.html"
-                          ><i class="fa-solid fa-heart"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#productsQuickView"
-                          ><i class="fa-solid fa-eye"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="products-details.html"
-                          ><i class="fa-solid fa-link"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="content">
-                    <h3>
-                      <a href="products-details.html">Premium pork rice</a>
-                    </h3>
-                    <div class="price">
-                      <span class="new-price">$100.00</span>
-                      <span class="old-price">$120.00</span>
-                    </div>
-                    <div class="rating">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Special Offers -->
-
-      <!-- Facility Area -->
-      <section id="facility">
-        <div class="facility-area">
-          <div class="container">
-            <div
-              class="facility-inner"
-              style="background: url(assets/images/bg1.jpg)"
-            >
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div class="single-facility-box">
-                    <img src="./assets/images/icons/icon1.png" alt="icon" />
-                    <h3>Best collection</h3>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div class="single-facility-box">
-                    <img src="./assets/images/icons/icon2.png" alt="icon" />
-                    <h3>Fast delivery</h3>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div class="single-facility-box">
-                    <img src="./assets/images/icons/icon3.png" alt="icon" />
-                    <h3>24/7 customer support</h3>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div class="single-facility-box">
-                    <img src="./assets/images/icons/icon4.png" alt="icon" />
-                    <h3>Secured payment</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Facility Area -->
-
-      <!-- Blog Area -->
-
-      <section id="blog">
-        <div class="blog-area pt-100 pb-75">
-          <div class="container">
-            <div class="section-title">
-              <h2>Latest Blog</h2>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                  <div class="image">
-                    <a href="blog-details.html" class="d-block">
-                      <img
-                        src="./assets/images/blog/blog1.jpg"
-                        alt="blog-image"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <span class="date"> <span>10 Aug</span> 2021 </span>
-                    <a href="blog-grid.html" class="category">Training</a>
-                    <h3>
-                      <a href="blog-details.html"
-                        >Properly a pet training guide</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                  <div class="image">
-                    <a href="blog-details.html" class="d-block">
-                      <img
-                        src="./assets/images/blog/blog2.jpg"
-                        alt="blog-image"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <span class="date"> <span>11 Aug</span> 2021 </span>
-                    <a href="blog-grid.html" class="category">Behaviour</a>
-                    <h3>
-                      <a href="blog-details.html"
-                        >The exact rules of how to travel with pets</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="single-blog-post">
-                  <div class="image">
-                    <a href="blog-details.html" class="d-block">
-                      <img
-                        src="./assets/images/blog/blog3.jpg"
-                        alt="blog-image"
-                      />
-                    </a>
-                  </div>
-                  <div class="content">
-                    <span class="date"> <span>12 Aug</span> 2021 </span>
-                    <a href="blog-grid.html" class="category">Solutions</a>
-                    <h3>
-                      <a href="blog-details.html"
-                        >Creating proper guidelines for pet food
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Blog Area -->
     </main>
-
     <!-- Footer Area -->
 
     <footer class="footer-area" style="background: url(assets/images/bg2.jpg)">
@@ -1998,6 +1173,206 @@
 
     <!-- Footer Area -->
 
+    <div
+      class="productsFilterModal modal right fade"
+      id="productsFilterModal"
+      tabindex="-1"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="modal-body">
+            <aside class="widget-area">
+              <div class="widget widget_categories">
+                <h3 class="widget-title"><span>Categories</span></h3>
+                <ul>
+                  <li><a href="shop-left-sidebar.html">Business</a></li>
+                  <li><a href="shop-left-sidebar.html">Privacy</a></li>
+                  <li><a href="shop-left-sidebar.html">Technology</a></li>
+                  <li><a href="shop-left-sidebar.html">Tips</a></li>
+                  <li><a href="shop-left-sidebar.html">Log in</a></li>
+                  <li><a href="shop-left-sidebar.html">Uncategorized</a></li>
+                </ul>
+              </div>
+              <div class="widget widget_price_filter">
+                <h3 class="widget-title"><span>Filter by Price</span></h3>
+                <div class="collection_filter_by_price">
+                  <span class="irs irs--flat js-irs-0"
+                    ><span class="irs"
+                      ><span class="irs-line" tabindex="0"></span
+                      ><span class="irs-min" style="visibility: visible">0</span
+                      ><span class="irs-max" style="visibility: visible"
+                        >1 055</span
+                      ><span
+                        class="irs-from"
+                        style="visibility: visible; left: 20.8247%"
+                        >260</span
+                      ><span
+                        class="irs-to"
+                        style="visibility: visible; left: 74.9241%"
+                        >860</span
+                      ><span
+                        class="irs-single"
+                        style="visibility: hidden; left: 42.2833%"
+                        >260 â€” 860</span
+                      ></span
+                    ><span class="irs-grid"></span
+                    ><span
+                      class="irs-bar"
+                      style="cursor: ew-resize; left: 25.8806%; width: 54.0995%"
+                    ></span
+                    ><span
+                      class="irs-shadow shadow-from"
+                      style="display: none"
+                    ></span
+                    ><span
+                      class="irs-shadow shadow-to"
+                      style="display: none"
+                    ></span
+                    ><span class="irs-handle from" style="left: 23.4431%"
+                      ><i></i><i></i><i></i></span
+                    ><span
+                      class="irs-handle to type_last"
+                      style="left: 77.5426%"
+                      ><i></i><i></i><i></i></span></span
+                  ><input
+                    class="js-range-of-price irs-hidden-input"
+                    type="text"
+                    data-min="0"
+                    data-max="2000"
+                    name="filter_by_price"
+                    data-step="10"
+                    tabindex="-1"
+                    readonly=""
+                  />
+                </div>
+              </div>
+              <div class="widget widget_patoi_posts_thumb">
+                <h3 class="widget-title"><span>Our Best Sellers</span></h3>
+                <article class="item">
+                  <a href="products-details.html" class="thumb">
+                    <img
+                      src="./assets/images/products/products1.jpg"
+                      alt="blog-image"
+                    />
+                  </a>
+                  <div class="info">
+                    <h4 class="title">
+                      <a href="products-details.html">Pet brash</a>
+                    </h4>
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="price">$150.00</span>
+                  </div>
+                </article>
+                <article class="item">
+                  <a href="products-details.html" class="thumb">
+                    <img
+                      src="./assets/images/products/products2.jpg"
+                      alt="blog-image"
+                    />
+                  </a>
+                  <div class="info">
+                    <h4 class="title">
+                      <a href="products-details.html"
+                        >Automatic dog blue leash</a
+                      >
+                    </h4>
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="price">$150.00</span>
+                  </div>
+                </article>
+                <article class="item">
+                  <a href="products-details.html" class="thumb">
+                    <img
+                      src="./assets/images/products/products3.jpg"
+                      alt="blog-image"
+                    />
+                  </a>
+                  <div class="info">
+                    <h4 class="title">
+                      <a href="products-details.html">Cat toilet bowl</a>
+                    </h4>
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="price">$150.00</span>
+                  </div>
+                </article>
+                <article class="item">
+                  <a href="products-details.html" class="thumb">
+                    <img
+                      src="./assets/images/products/products4.jpg"
+                      alt="blog-image"
+                    />
+                  </a>
+                  <div class="info">
+                    <h4 class="title">
+                      <a href="products-details.html">Bowl with rubber toy</a>
+                    </h4>
+                    <div class="star-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="price">$150.00</span>
+                  </div>
+                </article>
+              </div>
+              <div class="widget widget_tag_cloud">
+                <h3 class="widget-title"><span>Tags</span></h3>
+                <div class="tagcloud">
+                  <a href="shop-left-sidebar.html">Advertisment</a>
+                  <a href="shop-left-sidebar.html">Business</a>
+                  <a href="shop-left-sidebar.html">Life</a>
+                  <a href="shop-left-sidebar.html">Lifestyle</a>
+                  <a href="shop-left-sidebar.html">Fashion</a>
+                  <a href="shop-left-sidebar.html">Ads</a>
+                  <a href="shop-left-sidebar.html">Advertisment</a>
+                </div>
+              </div>
+              <div class="widget widget_follow_us">
+                <h3 class="widget-title"><span>Follow Us</span></h3>
+                <ul>
+                  <li><a href="#" target="_blank">Facebook</a></li>
+                  <li><a href="#" target="_blank">Twitter</a></li>
+                  <li><a href="#" target="_blank">Instagram</a></li>
+                  <li><a href="#" target="_blank">Pinterest</a></li>
+                  <li><a href="#" target="_blank">Linkedin</a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       $(".categories-slides").owlCarousel({
         nav: true,
@@ -2060,8 +1435,9 @@
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/counter.js"></script>
     <script type="text/javascript">
