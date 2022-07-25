@@ -35,6 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Titillium+Web:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/c.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Patoi - Pet Care Shop</title>
     <link rel="icon" type="image/png" href="./assets/images/logo.png" />
@@ -1172,7 +1173,7 @@
     </footer>
 
     <!-- Footer Area -->
-
+    <div class="go-top "><i class="fa-solid fa-arrow-up"></i></div>
     <div
       class="productsFilterModal modal right fade"
       id="productsFilterModal"
@@ -1205,55 +1206,29 @@
               </div>
               <div class="widget widget_price_filter">
                 <h3 class="widget-title"><span>Filter by Price</span></h3>
+                
                 <div class="collection_filter_by_price">
-                  <span class="irs irs--flat js-irs-0"
-                    ><span class="irs"
-                      ><span class="irs-line" tabindex="0"></span
-                      ><span class="irs-min" style="visibility: visible">0</span
-                      ><span class="irs-max" style="visibility: visible"
-                        >1 055</span
-                      ><span
-                        class="irs-from"
-                        style="visibility: visible; left: 20.8247%"
-                        >260</span
-                      ><span
-                        class="irs-to"
-                        style="visibility: visible; left: 74.9241%"
-                        >860</span
-                      ><span
-                        class="irs-single"
-                        style="visibility: hidden; left: 42.2833%"
-                        >260 â€” 860</span
-                      ></span
-                    ><span class="irs-grid"></span
-                    ><span
-                      class="irs-bar"
-                      style="cursor: ew-resize; left: 25.8806%; width: 54.0995%"
-                    ></span
-                    ><span
-                      class="irs-shadow shadow-from"
-                      style="display: none"
-                    ></span
-                    ><span
-                      class="irs-shadow shadow-to"
-                      style="display: none"
-                    ></span
-                    ><span class="irs-handle from" style="left: 23.4431%"
-                      ><i></i><i></i><i></i></span
-                    ><span
-                      class="irs-handle to type_last"
-                      style="left: 77.5426%"
-                      ><i></i><i></i><i></i></span></span
-                  ><input
-                    class="js-range-of-price irs-hidden-input"
-                    type="text"
-                    data-min="0"
-                    data-max="2000"
-                    name="filter_by_price"
-                    data-step="10"
-                    tabindex="-1"
-                    readonly=""
-                  />
+                  <div class="wrapper">
+     
+                    <div class="price-input">
+                      <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="2500">
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="7500">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="1">
+                      <input type="range" class="range-max" min="0" max="10000" value="7500" step="1">
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="widget widget_patoi_posts_thumb">
@@ -1372,7 +1347,56 @@
         </div>
       </div>
     </div>
-
+    <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark" ></i>
+              </button>
+              <div class="modal-body">
+                  <div class="row align-items-center">
+                      <div class="col-lg-6 col-md-6">
+                          <div class="image">
+                              <img src="./assets/images/products/products1.jpg" alt="image">
+                          </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                          <div class="content">
+                              <h3><a href="products-details.html">Pet Brash</a></h3>
+                              <div class="price">
+                                  <span class="new-price">$150.00</span>
+                                  <span class="old-price">$200.00</span>
+                              </div>
+                              <div class="rating">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p>Nemo malesuada animi consectetur, cras consectetuer laborum tenetur, cum, lacus nemo imperdiet facilisis aute metus lorem.</p>
+                              <div class="products-add-to-cart">
+                                  <div class="input-counter">
+                                      <span class="minus-btn"><i class="fa-solid fa-minus"></i></span>
+                                      <input type="text" value="0" min="0"  >
+                                      <span class="plus-btn"><i class="fa-solid fa-plus"></i></span>
+                                  </div>
+                                  <button type="submit" class="default-btn"><span>Add to Cart</span></button>
+                              </div>
+                              <a href="wishlist.html" class="add-to-wishlist"><i class="fa-solid fa-heart"></i> Add to wishlist</a>
+                              <ul class="products-info">
+                                  <li><span>SKU:</span> 007</li>
+                                  <li><span>Categories:</span> <a href="shop-grid.html">Brash</a></li>
+                                  <li><span>Availability:</span> In stock (7 items)</li>
+                                  <li><span>Tag:</span> Accessories</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
     <script>
       $(".categories-slides").owlCarousel({
         nav: true,
@@ -1439,7 +1463,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         loopcounter("counter-class");

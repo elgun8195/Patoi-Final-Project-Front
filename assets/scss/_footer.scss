@@ -300,3 +300,27 @@
 
 /* Min width 1550px */
 @media only screen and (min-width: 1550px) {}
+
+
+.go-top {
+    z-index: 4;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    line-height: 1;
+    position: fixed;
+    cursor: pointer;
+    font-size: 40px;
+    transition: .2s;
+    visibility: hidden;
+    color: $primary-color;
+
+    &:hover {
+        bottom: 25px;
+    }
+    &.active {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+}

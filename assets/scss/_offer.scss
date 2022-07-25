@@ -344,32 +344,3 @@
 }
 
 
-.facility-inner{
-  padding: 100px 40px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .col-lg-3 {
-      border-right: 1px solid white;
-
-      &:last-child {
-          border-right: none;
-      }
-  }
- .single-facility-box{
-  text-align: center;
-  img{
-    margin-bottom: 18px;
-    max-width: 100%;
-    height: auto;
-  }
-  h3{
-    margin-bottom: 0;
-    font-size: 18px;
-    color: black;
-    font-weight: 700;
-    font-family: "Fredoka One", cursive;
-  }
- }
-}
-
