@@ -394,14 +394,6 @@
                       .dropdown-toggle {
                           padding-right: 15px;
       
-                          &::before {
-                              top: 3px;
-                              right: 10px;
-                              font-size: 20px;
-                              content: "\ecad";
-                              position: absolute;
-                              font-family: boxicons;
-                          }
                       }
                       .dropdown-menu {
                           top: 0;
@@ -946,7 +938,7 @@
                                   height: 20px;
                                   text-align: end;
                                   padding: 10px !important;
-                                  font-family: var(--fontFamily);
+                                  font-family: 16px;
                                   background: transparent !important;
                                   border: {
                                       left: none !important;
@@ -985,7 +977,7 @@
                   height: 30px;
                   padding-top: 20px;
                   color: black;
-                  font-family: var(--fontFamily);
+                  font-family: 16px;
 
                   span {
                       top: 8px;
@@ -1002,6 +994,9 @@
               position: absolute;
               z-index: 999;
               padding: 0;
+              a{
+                right: 0;
+              }
           }
       }
       .dropdown-toggle {
@@ -1019,6 +1014,10 @@
           position: relative;
           z-index: 999;
           width: 60%;
+          img{
+            width: 100px;
+            height: auto;
+          }
       }
   }
   .patoi-nav {
@@ -1139,7 +1138,7 @@
                                   height: 20px;
                                   text-align: end;
                                   padding: 10px !important;
-                                  font-family: var(--fontFamily);
+                                  font-family: 16px;
                                   background: transparent !important;
                                   border: {
                                       left: none !important;
@@ -1178,7 +1177,7 @@
                   height: 30px;
                   padding-top: 20px;
                   color: black;
-                  font-family: var(--fontFamily);
+                  font-family: 16px;
 
                   span {
                       top: 8px;
@@ -1191,10 +1190,14 @@
               }
           }
           .mean-bar {
+            width: 100%;
               background: transparent;
               position: absolute;
               z-index: 999;
               padding: 0;
+              a{
+                right: 0;
+              }
           }
       }
       .dropdown-toggle {
@@ -1212,6 +1215,10 @@
           position: relative;
           z-index: 999;
           width: 60%;
+          img{
+            width: 100px;
+            height: auto;
+          }
       }
   }
   .patoi-nav {
