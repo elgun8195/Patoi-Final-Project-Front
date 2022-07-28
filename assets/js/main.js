@@ -145,3 +145,67 @@ rangeInput.forEach(input =>{
 
 
 //price range
+let inner = document.getElementById("inner");
+      let optioninner = document.getElementById("option-inner");
+      let mexpand1 = document.getElementById("mexpand1");
+      let mexpand2 = document.getElementById("mexpand2");
+      let mexpand3 = document.getElementById("mexpand3");
+      let mexpand4 = document.getElementById("mexpand4");
+      let mmenu = document.getElementById("meanmenu-reveal");
+      let navbarnav = document.getElementById("navbar-nav");
+      let dropdown1 = document.getElementById("dmenu1");
+      let dropdown2 = document.getElementById("dmenu2");
+      let dropdown3 = document.getElementById("dmenu3");
+      let dropdown4 = document.getElementById("dmenu4");      
+        
+        mexpand1.addEventListener("click", () => {
+         
+              if (dropdown1.style.display === "none") {
+                dropdown1.style.display = "block";
+              } else {
+                dropdown1.style.display = "none";
+              }
+            
+        });
+        mexpand2.addEventListener("click", () => {
+         
+         if (dropdown2.style.display === "none") {
+           dropdown2.style.display = "block";
+         } else {
+           dropdown2.style.display = "none";
+         }
+       
+   });
+        mexpand3.addEventListener("click", () => {
+        
+         if (dropdown3.style.display === "none") {
+           dropdown3.style.display = "block";
+         } else {
+           dropdown3.style.display = "none";
+         }
+       
+   });
+        mexpand4.addEventListener("click", () => {
+         
+         if (dropdown4.style.display === "none") {
+           dropdown4.style.display = "block";
+         } else {
+           dropdown4.style.display = "none";
+         }
+       
+   });
+
+        inner.addEventListener("click", () => {
+        optioninner.classList.toggle("active");
+      });
+
+        mmenu.addEventListener("click", () => {
+        mmenu.classList.toggle("meanclose");
+        
+        if (navbarnav.style.display === "none") {
+          navbarnav.style.display = "block";
+        } else {
+          navbarnav.style.display = "none";
+        }
+      });
+      

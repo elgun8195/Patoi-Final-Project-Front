@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,6 +19,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css"
     />
     <link
       rel="stylesheet"
@@ -29,22 +35,36 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Titillium+Web:wght@200&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./assets/css/c.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mmenu.min.css" />
     <title>Patoi - Pet Care Shop</title>
     <link rel="icon" type="image/png" href="./assets/images/logo.png" />
   </head>
-
   <body>
     <!-- Start Top Header Area -->
 
     <div class="top-header-area">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <p>FREE 5 days shipping over $99</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-5 col-md-5 col-sm-6">
+            <div class="search-box">
+              <form>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Enter your keywords..."
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
             <ul>
               <li>
                 <a href="#" target="_blank">
@@ -74,16 +94,25 @@
 
     <!-- End Top Header Area -->
 
+    <!-- Navbar Start -->
     <div class="navbar-area">
       <div class="patoi-responsive-nav">
         <div class="container">
           <div class="patoi-responsive-menu mean-container">
             <div class="mean-bar">
+              <a
+                href="#nav"
+                class="meanmenu-reveal"
+                id="meanmenu-reveal"
+                style="margin-top: -2%"
+                ><span
+                  ><span><span></span></span></span
+              ></a>
               <nav class="mean-nav">
-                <ul class="navbar-nav d-flex" style="display: none" id="navbar-nav">
+                <ul class="navbar-nav" id="navbar-nav" style="display: none">
                   <li class="nav-item">
                     <a href="#" class="dropdown-toggle nav-link active">Home</a>
-                    <ul class="dropdown-menu" style="display: none">
+                    <ul class="dropdown-menu" id="dmenu1" style="display: none">
                       <li class="nav-item">
                         <a href="index.html" class="nav-link active"
                           >Home Demo - One</a
@@ -100,13 +129,17 @@
                         >
                       </li>
                     </ul>
-                    <a class="mean-expand" href="#" style="font-size: 18px"
+                    <a
+                      class="mean-expand"
+                      id="mexpand1"
+                      href="#"
+                      style="font-size: 18px"
                       >+</a
                     >
                   </li>
                   <li class="nav-item">
                     <a href="#" class="dropdown-toggle nav-link">Pages</a>
-                    <ul class="dropdown-menu" style="display: none">
+                    <ul class="dropdown-menu" id="dmenu2" style="display: none">
                       <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
                       </li>
@@ -139,13 +172,17 @@
                         >
                       </li>
                     </ul>
-                    <a class="mean-expand" href="#" style="font-size: 18px"
+                    <a
+                      class="mean-expand"
+                      id="mexpand2"
+                      href="#"
+                      style="font-size: 18px"
                       >+</a
                     >
                   </li>
                   <li class="nav-item">
                     <a href="#" class="dropdown-toggle nav-link">Shop</a>
-                    <ul class="dropdown-menu" style="display: none">
+                    <ul class="dropdown-menu" id="dmenu3" style="display: none">
                       <li class="nav-item">
                         <a href="shop-grid.html" class="nav-link">Shop Grid</a>
                       </li>
@@ -174,13 +211,17 @@
                         <a href="wishlist.html" class="nav-link">Wishlist</a>
                       </li>
                     </ul>
-                    <a class="mean-expand" href="#" style="font-size: 18px"
+                    <a
+                      class="mean-expand"
+                      id="mexpand3"
+                      href="#"
+                      style="font-size: 18px"
                       >+</a
                     >
                   </li>
                   <li class="nav-item">
                     <a href="#" class="dropdown-toggle nav-link">Blog</a>
-                    <ul class="dropdown-menu" style="display: none">
+                    <ul class="dropdown-menu" id="dmenu4" style="display: none">
                       <li class="nav-item">
                         <a href="blog-grid.html" class="nav-link">Blog Grid</a>
                       </li>
@@ -200,7 +241,11 @@
                         >
                       </li>
                     </ul>
-                    <a class="mean-expand" href="#" style="font-size: 18px"
+                    <a
+                      class="mean-expand"
+                      id="mexpand4"
+                      href="#"
+                      style="font-size: 18px"
                       >+</a
                     >
                   </li>
@@ -220,16 +265,18 @@
                       </li>
                       <li>
                         <div class="search-icon">
-                          <i class="bx bx-search"></i>
+                          <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                       </li>
                       <li>
                         <a href="profile-authentication.html"
-                          ><i class="bx bx-user-circle"></i
+                          ><i class="fa-solid fa-circle-user"></i
                         ></a>
                       </li>
                       <li class="mean-last">
-                        <a href="cart.html"><i class="bx bx-cart"></i></a>
+                        <a href="cart.html"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
                       </li>
                     </ul>
                   </div>
@@ -238,7 +285,7 @@
             </div>
             <div class="logo">
               <a href="index.html"
-                ><img src="./assets/images/logo.png" alt="logo"
+                ><img src=" ./assets/images/logo.png" alt="logo"
               /></a>
             </div>
           </div>
@@ -248,12 +295,11 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="index.html"
-              ><img src="./assets/images/logo.png" alt="logo"
+              ><img src=" ./assets/images/logo.png" alt="logo"
             /></a>
-            <div class="mean-push"></div>
             <div
               class="collapse navbar-collapse mean-menu"
-              style="display: none"
+              style="display: block"
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -383,16 +429,18 @@
                     </li>
                     <li>
                       <div class="search-icon">
-                        <i class="bx bx-search"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                       </div>
                     </li>
                     <li>
                       <a href="profile-authentication.html"
-                        ><i class="bx bx-user-circle"></i
+                        ><i class="fa-solid fa-circle-user"></i
                       ></a>
                     </li>
                     <li>
-                      <a href="cart.html"><i class="bx bx-cart"></i></a>
+                      <a href="cart.html"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -402,28 +450,15 @@
         </div>
       </div>
       <div class="others-option-for-responsive">
-        <div class="container d-flex">
-          <div class="dot-menu d-flex">
+        <div class="container">
+          <div class="dot-menu" style="margin-top: 1.5%">
             <div class="inner" id="inner">
               <div class="circle circle-one"></div>
               <div class="circle circle-two"></div>
               <div class="circle circle-three"></div>
             </div>
-            <a
-              href="#nav"
-              class="meanmenu-reveal ml-4"
-              id="meanmenu-reveal"
-              style="
-                right: 0px;
-                left: auto;
-                text-align: center;
-                text-indent: 0px;
-                font-size: 18px;
-              "
-              ><i class="fa-solid fa-bars" style="font-size: 30px"></i
-            ></a>
           </div>
-          <div class="container" id="odu">
+          <div class="container" id="option-inner">
             <div class="option-inner">
               <div class="others-option">
                 <ul>
@@ -436,16 +471,18 @@
                   </li>
                   <li>
                     <div class="search-icon">
-                      <i class="bx bx-search"></i>
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                   </li>
                   <li>
                     <a href="profile-authentication.html"
-                      ><i class="bx bx-user-circle"></i
+                      ><i class="fa-solid fa-circle-user"></i
                     ></a>
                   </li>
                   <li>
-                    <a href="cart.html"><i class="bx bx-cart"></i></a>
+                    <a href="cart.html"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -454,6 +491,94 @@
         </div>
       </div>
     </div>
+
+    <!-- Navbar End -->
+
+    <!-- Search Area -->
+    <div class="search-overlay">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-close">
+            <span class="search-overlay-close-line"></span>
+            <span class="search-overlay-close-line"></span>
+          </div>
+          <div class="search-overlay-form">
+            <form>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Enter your keywords..."
+              />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Area -->
+
+
+<main>
+
+  <section id="page-title">
+    <div class="page-title-area">
+      <div class="container">
+        <div class="page-title-content">
+          <h1>Order Tracking</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><i class="fa-solid fa-angle-right"></i> Order Tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="order-tracking-area pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="order-tracking-image">
+                    <img src="./assets/images/dog.png" alt="dog">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="order-tracking-content">
+                    <h3>Order Tracking</h3>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Cras ultricies ligula sed magna dictum porta.</p>
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label>Order ID</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Billing email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <button type="submit">Track</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</main>
+
+
+
+
 
     <!-- Footer Area -->
 
@@ -888,33 +1013,12 @@
         </div>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-      let inner = document.getElementById("inner");
-      let odu = document.getElementById("odu");
-      let mmenu = document.getElementById("meanmenu-reveal");
-      let navbarnav = document.getElementById("navbar-nav");
-      inner.addEventListener("click",()=>{
-          odu.classList.toggle("active");
-
-      });
-
-      // mmenu.addEventListener("click",()=>{
-      //       mmenu.classList.toggle("meanclose");
-      // });
-
-      mmenu.addEventListener("click", () => {
-        if (navbarnav.style.display === "none") {
-          navbarnav.style.display = "block";
-        } else {
-          navbarnav.style.display = "none";
-        }
-      });
-    </script>
   </body>
 </html>

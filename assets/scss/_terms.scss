@@ -99,3 +99,22 @@
         }
     }
 }
+
+.single-team-member {
+    margin-bottom: 25px;
+    
+    img {
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-bottom: 8px;
+        font-size: 19px;
+    }
+    span {
+        color: $primary-color;
+        font: {
+            size: 15px;
+            weight: 600;
+        };
+    }
+}

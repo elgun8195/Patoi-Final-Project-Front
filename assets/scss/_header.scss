@@ -1044,6 +1044,9 @@
           }
       }
   }
+  .dot-menu{
+    margin-top: 4%;
+  }
 
 }
 
@@ -1171,6 +1174,7 @@
       .mean-container {
           a {
               &.meanmenu-reveal {
+               
                   top: 0;
                   padding: 0;
                   width: 35px;
@@ -1190,7 +1194,6 @@
               }
           }
           .mean-bar {
-            width: 100%;
               background: transparent;
               position: absolute;
               z-index: 999;
@@ -1247,6 +1250,9 @@
       }
   }
 
+}
+.pb-100{
+    padding-bottom: 100px;
 }
 
 /* Min width 1200px to Max width 1399px */
