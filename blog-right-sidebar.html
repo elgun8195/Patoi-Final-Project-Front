@@ -52,7 +52,7 @@
           </div>
           <div class="col-lg-5 col-md-5 col-sm-6">
             <div class="search-box">
-              <form>
+              <form method="post">
                 <input
                   type="text"
                   class="input-search"
@@ -112,23 +112,7 @@
                 <ul class="navbar-nav" id="navbar-nav" style="display: none">
                   <li class="nav-item">
                     <a href="#" class="dropdown-toggle nav-link active">Home</a>
-                    <ul class="dropdown-menu" id="dmenu1" style="display: none">
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link active"
-                          >Home Demo - One</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a href="index-2.html" class="nav-link"
-                          >Home Demo - Two</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a href="index-3.html" class="nav-link"
-                          >Home Demo - Three</a
-                        >
-                      </li>
-                    </ul>
+                   
                     <a
                       class="mean-expand"
                       id="mexpand1"
@@ -138,7 +122,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="dropdown-toggle nav-link">Pages</a>
+                    <a href="#" class="dropdown-toggle nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="dropdown-menu" id="dmenu2" style="display: none">
                       <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
@@ -181,7 +165,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="dropdown-toggle nav-link">Shop</a>
+                    <a href="#" class="dropdown-toggle nav-link">Shop <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="dropdown-menu" id="dmenu3" style="display: none">
                       <li class="nav-item">
                         <a href="shop-grid.html" class="nav-link">Shop Grid</a>
@@ -304,26 +288,9 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a href="#" class="dropdown-toggle nav-link active">Home</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link active"
-                        >Home Demo - One</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="index-2.html" class="nav-link"
-                        >Home Demo - Two</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a href="index-3.html" class="nav-link"
-                        >Home Demo - Three</a
-                      >
-                    </li>
-                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="dropdown-toggle nav-link">Pages</a>
+                  <a href="#" class="dropdown-toggle nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
                       <a href="about.html" class="nav-link">About Us</a>
@@ -359,7 +326,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="dropdown-toggle nav-link">Shop</a>
+                  <a href="#" class="dropdown-toggle nav-link">Shop <i class="fa-solid fa-angle-down"></i></a>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
                       <a href="shop-grid.html" class="nav-link">Shop Grid</a>
@@ -506,7 +473,7 @@
             <span class="search-overlay-close-line"></span>
           </div>
           <div class="search-overlay-form">
-            <form>
+            <form method="post">
               <input
                 type="text"
                 class="input-search"
@@ -522,158 +489,255 @@
     </div>
     <!-- Search Area -->
 
-
-<main>
-
-  <section id="page-title">
-    <div class="page-title-area">
-      <div class="container">
-        <div class="page-title-content">
-          <h1>Blog Grid</h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><i class="fa-solid fa-angle-right"></i> Blog Grid</li>
-          </ul>
+    <main>
+      <section id="page-title">
+        <div class="page-title-area">
+          <div class="container">
+            <div class="page-title-content">
+              <h1>Blog Right Sidebar</h1>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i> Blog Right Sidebar
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-
-
-<!-- Blog Area -->
-
-<section id="blog-grid">
+      <!-- Blog Area -->
+<section id="blog-right">
     <div class="blog-area ptb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog1.jpg" alt="blog-image">
-                            </a>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog1.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>10 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Training</a>
+                                    <h3><a href="blog-details.html">Properly a pet training guide</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>10 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Training</a>
-                            <h3><a href="blog-details.html">Properly a pet training guide</a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog2.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>11 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Behaviour</a>
+                                    <h3><a href="blog-details.html">The exact rules of how to travel with pets</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog3.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>12 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Solutions</a>
+                                    <h3><a href="blog-details.html">Creating proper guidelines for pet food</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog4.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>11 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Browser</a>
+                                    <h3><a href="blog-details.html">Patch browser bug to prevent tracking</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog5.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>10 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Cicadas</a>
+                                    <h3><a href="blog-details.html">Are cicadas dangerous for pets to eat?</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog6.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>09 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Pet</a>
+                                    <h3><a href="blog-details.html">Pet trends to watch in 2022</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog7.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>08 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Pet</a>
+                                    <h3><a href="blog-details.html">Should you be worried about pet theft?</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blog-post">
+                                <div class="image">
+                                    <a href="blog-details.html" class="d-block">
+                                        <img src="./assets/images/blog/blog8.jpg" alt="blog-image">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="date">
+                                        <span>07 Aug</span> 2022
+                                    </span>
+                                    <a href="blog-grid.html" class="category">Dog</a>
+                                    <h3><a href="blog-details.html">Dog training services in high demand</a></h3>
+                                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="pagination-area">
+                                <div class="nav-links">
+                                    <a href="blog-left-sidebar.html" class="previous page-numbers" title="Next Page"><i class="bx bx-chevrons-left"></i></a>
+                                    <span class="page-numbers current">1</span>
+                                    <a href="blog-left-sidebar.html" class="page-numbers">2</a>
+                                    <a href="blog-left-sidebar.html" class="page-numbers">3</a>
+                                    <a href="blog-left-sidebar.html" class="next page-numbers" title="Next Page"><i class="bx bx-chevrons-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog2.jpg" alt="blog-image">
-                            </a>
+                <div class="col-lg-4 col-md-12">
+                    <aside class="widget-area right-sidebar">
+                        <div class="widget widget_search">
+                            <form class="search-form">
+                                <input type="search" class="search-field" placeholder="Search...">
+                                <button type="submit"><i class="bx bx-search"></i></button>
+                            </form>
                         </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>11 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Behaviour</a>
-                            <h3><a href="blog-details.html">The exact rules of how to travel with pets</a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                        <div class="widget widget_author">
+                            <img src="./assets/images/team/team2.jpg" alt="author">
+                            <h3>Sarah Taylor</h3>
+                            <span>Blogger</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                            <img src="./assets/images/signature.png" alt="signature">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog3.jpg" alt="blog-image">
-                            </a>
+                        <div class="widget widget_follow_us">
+                            <h3 class="widget-title"><span>Follow Us</span></h3>
+                            <ul>
+                                <li><a href="#" target="_blank">Facebook</a></li>
+                                <li><a href="#" target="_blank">Twitter</a></li>
+                                <li><a href="#" target="_blank">Instagram</a></li>
+                                <li><a href="#" target="_blank">Pinterest</a></li>
+                                <li><a href="#" target="_blank">Linkedin</a></li>
+                            </ul>
                         </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>12 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Solutions</a>
-                            <h3><a href="blog-details.html">Creating proper guidelines for pet food </a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
+                        <div class="widget widget_patoi_posts_thumb">
+                            <h3 class="widget-title"><span>Popular Posts</span></h3>
+                            <article class="item">
+                                <a href="blog-details.html" class="thumb">
+                                    <img src="./assets/images/blog/blog1.jpg" alt="blog-image">
+                                </a>
+                                <div class="info">
+                                    <h4 class="title"><a href="blog-details.html">Being the best-selling smart phone this year</a></h4>
+                                    <span class="date">Jan 15, 2020</span>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <a href="blog-details.html" class="thumb">
+                                    <img src="./assets/images/blog/blog2.jpg" alt="blog-image">
+                                </a>
+                                <div class="info">
+                                    <h4 class="title"><a href="blog-details.html">Love songs helped me through heartbreak</a></h4>
+                                    <span class="date">Jan 14, 2020</span>
+                                </div>
+                            </article>
+                            <article class="item">
+                                <a href="blog-details.html" class="thumb">
+                                    <img src="./assets/images/blog/blog3.jpg" alt="blog-image">
+                                </a>
+                                <div class="info">
+                                    <h4 class="title"><a href="blog-details.html">Two fashion designers busy with 2020 winter fashion</a></h4>
+                                    <span class="date">Jan 13, 2020</span>
+                                </div>
+                            </article>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog4.jpg" alt="blog-image">
-                            </a>
+                        <div class="widget widget_tag_cloud">
+                            <h3 class="widget-title"><span>Tags</span></h3>
+                            <div class="tagcloud">
+                                <a href="blog-right-sidebar.html">Advertisment</a>
+                                <a href="blog-right-sidebar.html">Business</a>
+                                <a href="blog-right-sidebar.html">Life</a>
+                                <a href="blog-right-sidebar.html">Lifestyle</a>
+                                <a href="blog-right-sidebar.html">Fashion</a>
+                                <a href="blog-right-sidebar.html">Ads</a>
+                                <a href="blog-right-sidebar.html">Advertisment</a>
+                                <a href="blog-right-sidebar.html">Business</a>
+                            </div>
                         </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>11 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Browser</a>
-                            <h3><a href="blog-details.html">Patch browser bug to prevent tracking</a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog5.jpg" alt="blog-image">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>10 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Cicadas</a>
-                            <h3><a href="blog-details.html">Are cicadas dangerous for pets to eat?</a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-post">
-                        <div class="image">
-                            <a href="blog-details.html" class="d-block">
-                                <img src="./assets/images/blog/blog6.jpg" alt="blog-image">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <span class="date">
-                                <span>09 Aug</span> 2022
-                            </span>
-                            <a href="blog-grid.html" class="category">Pet</a>
-                            <h3><a href="blog-details.html">Pet trends to watch in 2022</a></h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                    <div class="pagination-area">
-                        <div class="nav-links">
-                            <a href="blog-grid.html" class="previous page-numbers" title="Next Page"><i class="fa-solid fa-chevron-left"></i></a>
-                            <span class="page-numbers current">1</span>
-                            <a href="blog-grid.html" class="page-numbers">2</a>
-                            <a href="blog-grid.html" class="page-numbers">3</a>
-                            <a href="blog-grid.html" class="next page-numbers" title="Next Page"><i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Blog Area -->
-
-
-
-</main>
-
-
-
-
+      <!-- Blog Area -->
+    </main>
 
     <!-- Footer Area -->
 
@@ -773,6 +837,7 @@
                 &amp; offers.
               </p>
               <form
+                method="post"
                 class="newsletter-form"
                 data-toggle="validator"
                 novalidate="true"
