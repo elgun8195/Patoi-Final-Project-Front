@@ -5204,7 +5204,12 @@ p {
   line-height: 1.7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-weight: 700;
   font-family: "Fredoka One", cursive;
@@ -5293,6 +5298,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .default-btn:hover span::before, .default-btn:hover span::after {
   height: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

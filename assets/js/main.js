@@ -147,7 +147,6 @@ rangeInput.forEach(input =>{
 //price range
 let inner = document.getElementById("inner");
       let optioninner = document.getElementById("option-inner");
-      let mexpand1 = document.getElementById("mexpand1");
       let mexpand2 = document.getElementById("mexpand2");
       let mexpand3 = document.getElementById("mexpand3");
       let mexpand4 = document.getElementById("mexpand4");
@@ -158,15 +157,7 @@ let inner = document.getElementById("inner");
       let dropdown3 = document.getElementById("dmenu3");
       let dropdown4 = document.getElementById("dmenu4");      
         
-        mexpand1.addEventListener("click", () => {
-         
-              if (dropdown1.style.display === "none") {
-                dropdown1.style.display = "block";
-              } else {
-                dropdown1.style.display = "none";
-              }
-            
-        });
+       
         mexpand2.addEventListener("click", () => {
          
          if (dropdown2.style.display === "none") {
