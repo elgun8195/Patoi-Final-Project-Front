@@ -1,6 +1,6 @@
 .page-title-area {
   a {
-    color: black;
+    color: $black;
   }
   a:hover {
     color: $primary-color;
@@ -19,27 +19,13 @@
     top: 130px;
     bottom: 180px;
   }
-  &::before {
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    bottom: -1px;
-    height: 81px;
-    position: absolute;
-    
-    background: {
-      position: center center;
-      repeat: no-repeat;
-      size: cover;
-    }
-    background-image: url(../images/shape.png);
-  }
+ 
 }
 .page-title-content {
   h1 {
     margin-bottom: 12px;
     font-size: 45px;
-    color: black !important;
+    color: $black !important;
     font-weight: 700;
     font-family: "Fredoka One ", cursive;
   }

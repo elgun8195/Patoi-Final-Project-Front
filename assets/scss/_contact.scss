@@ -31,87 +31,7 @@
         border-color: $primary-color;
       }
     }
-    .default-btn {
-      margin-top: 5px;
-      border: 0;
-      z-index: 1;
-      overflow: hidden;
-      position: relative;
-      padding: 11px 30px;
-      border-radius: 5px;
-      letter-spacing: 0.5px;
-      display: inline-block;
-      color: white;
-      transition: 0.5s;
-      background-color: $primary-color;
-      font: {
-        size: 13px;
-        font-family: "Fredoka One", cursive;
-      }
-      &::before {
-        top: 0;
-        left: 0;
-        height: 0;
-        content: "";
-        z-index: -1;
-        width: 25.25%;
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        background-color: black;
-      }
-      &::after {
-        top: 0;
-        left: 50%;
-        height: 0;
-        content: "";
-        z-index: -1;
-        width: 25.25%;
-        position: absolute;
-        transition: 0.5s ease-in-out;
-        background-color: black;
-      }
-      span {
-        display: block;
-
-        &::before {
-          bottom: 0;
-          height: 0;
-          left: 25%;
-          content: "";
-          z-index: -1;
-          width: 25.25%;
-          position: absolute;
-          transition: 0.5s ease-in-out;
-          background-color: black;
-        }
-        &::after {
-          bottom: 0;
-          left: 75%;
-          height: 0;
-          content: "";
-          z-index: -1;
-          width: 25.25%;
-          position: absolute;
-          transition: 0.5s ease-in-out;
-          background-color: black;
-        }
-      }
-      &:hover {
-        color: white;
-        background-color: $primary-color;
-
-        &::before,
-        &::after {
-          height: 100%;
-        }
-        span {
-          &::before,
-          &::after {
-            height: 100%;
-          }
-        }
-      }
-    }
+  
     .help-block {
       .with-errors {
         color: red;
@@ -151,7 +71,7 @@
       margin-bottom: 13px;
       span {
         font-weight: 600;
-        color:black;
+        color:$black;
       }
       a {
         color: $secondary-color;

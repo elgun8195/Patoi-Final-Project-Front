@@ -1,12 +1,12 @@
 h3,
 h4 {
-  color: black;
+  color: $black;
   font-weight: 700;
-  font-family: "Fredoka One", cursive;
+  font-family: $main-font, cursive;
 }
 a {
   transition: 0.5s;
-  color: black;
+  color: $black;
   text-decoration: none;
   outline: 0 !important;
 }
@@ -32,7 +32,7 @@ img {
           opacity: 1;
           box-shadow: unset;
           position: absolute;
-          color: black;
+          color: $black;
           transition: 0.5s;
         }
       }
@@ -66,7 +66,7 @@ img {
           opacity: 1;
           box-shadow: unset;
           position: absolute;
-          color: black;
+          color: $black;
           transition: 0.5s;
         }
       }
@@ -152,7 +152,7 @@ img {
 
         &:hover {
           color: white;
-          background-color: black;
+          background-color: $black;
         }
       }
     }
@@ -413,87 +413,7 @@ img {
     }
   }
 }
-.default-btn {
-  margin-top: 10px;
-  border: 0;
-  z-index: 1;
-  overflow: hidden;
-  position: relative;
-  padding: 11px 30px;
-  border-radius: 5px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  color: white;
-  transition: 0.5s;
-  background-color: $primary-color;
-  font: {
-    size: 13px;
-    family: "Fredoka One", cursive;
-  }
-  &::before {
-    top: 0;
-    left: 0;
-    height: 0;
-    content: "";
-    z-index: -1;
-    width: 25.25%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-    background-color: black;
-  }
-  &::after {
-    top: 0;
-    left: 50%;
-    height: 0;
-    content: "";
-    z-index: -1;
-    width: 25.25%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-    background-color: black;
-  }
-  span {
-    display: block;
-
-    &::before {
-      bottom: 0;
-      height: 0;
-      left: 25%;
-      content: "";
-      z-index: -1;
-      width: 25.25%;
-      position: absolute;
-      transition: 0.5s ease-in-out;
-      background-color: black;
-    }
-    &::after {
-      bottom: 0;
-      left: 75%;
-      height: 0;
-      content: "";
-      z-index: -1;
-      width: 25.25%;
-      position: absolute;
-      transition: 0.5s ease-in-out;
-      background-color: black;
-    }
-  }
-  &:hover {
-    color: white;
-    background-color: $primary-color;
-
-    &::before,
-    &::after {
-      height: 100%;
-    }
-    span {
-      &::before,
-      &::after {
-        height: 100%;
-      }
-    }
-  }
-}
+ 
 .productsQuickView {
   padding-right: 0 !important;
 
@@ -514,7 +434,7 @@ img {
         right: 10px;
         box-shadow: unset;
         position: absolute;
-        color: black;
+        color: $black;
         transition: 0.5s;
       }
     }
@@ -531,11 +451,11 @@ img {
           font-size: 20px;
         }
         .price {
-          color: black;
+          color: $black;
           font-size: 13px;
 
           .new-price {
-            font-family: "Fredoka One", cursive;
+            font-family: $main-font, cursive;
           }
           .old-price {
             color: $secondary-color;
@@ -592,7 +512,7 @@ img {
               height: 45px;
               display: block;
               text-align: center;
-              color: black;
+              color: $black;
               border: 1px solid #eeeeee;
               background-color: white;
               font: {
@@ -600,7 +520,7 @@ img {
                 weight: 600;
               }
               &::placeholder {
-                color: black;
+                color: $black;
               }
             }
           }
@@ -647,7 +567,7 @@ img {
             color: $secondary-color;
 
             span {
-              color: black;
+              color: $black;
               font-weight: 600;
             }
             a {

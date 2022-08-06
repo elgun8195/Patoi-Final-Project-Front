@@ -17,7 +17,7 @@
                     padding: 0 0 15px;
                     font: {
                         size: 15px;
-                        family: "Fredoka One",cursive;
+                        family: $main-font,cursive;
                     };
                 }
             }
@@ -27,7 +27,7 @@
                 border-color: #eeeeee;
 
                 td {
-                    color:black;
+                    color:$black;
                     vertical-align: middle;
                     white-space: nowrap;
                     text-align: center;
@@ -99,7 +99,7 @@
                                 height: 47px;
                                 display: block;
                                 text-align: center;
-                                color:black;
+                                color:$black;
                                 border: 1px solid #eeeeee;
                                 background-color: white;
                                 font: {
@@ -107,7 +107,7 @@
                                     weight: 600;
                                 }
                                 &::placeholder {
-                                    color:black;
+                                    color:$black;
                                 }
                             }
                         }
@@ -129,7 +129,7 @@
             font-size: 15px;
             box-shadow: unset;
             padding-left: 15px;
-            color:black;
+            color:$black;
         }
         button {
             top: 0;
@@ -148,7 +148,7 @@
                 weight: 600;
             };
             &:hover {
-                background-color:black;
+                background-color:$black;
             }
         }
     }
@@ -174,7 +174,7 @@
         
         li {
             border-bottom: 1px solid #eeeeee;
-            color:black;
+            color:$black;
             overflow: hidden;
             font-weight: 600;
             padding: {
@@ -190,7 +190,7 @@
                 border-bottom: none;
 
                 span {
-                    color:black;
+                    color:$black;
                     font-weight: 700;
                 }
             }

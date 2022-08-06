@@ -12,10 +12,10 @@
     font-size: 35px;
   }
   p {
-    color: black;
+    color: $black;
     font: {
       size: 18px;
-      family: "Fredoka One", cursive;
+      family: $main-font, cursive;
     }
   }
   .default-btn {
@@ -33,12 +33,12 @@
     font-size: 35px;
   }
   span {
-    color: black;
+    color: $black;
     margin-bottom: 15px;
     display: block;
     font: {
       size: 16px;
-      family: "Fredoka One", cursive;
+      family: $main-font, cursive;
     }
   }
 }
@@ -50,7 +50,7 @@
   z-index: 1;
 
   p {
-    color: black;
+    color: $black;
     font: {
       size: 18px;
       weight: 600;

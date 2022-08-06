@@ -3,6 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
+img{
+  max-width: 100%;
+    height: auto;
+}
 p {
   color: $secondary-color;
   font-size: 16px;
@@ -15,9 +19,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: $black;
   font-weight: 700;
-  font-family: "Fredoka One", cursive;
+  font-family: $main-font, cursive;
 }
 .section-title {
   text-align: center;
@@ -28,7 +32,7 @@ h6 {
   h2 {
     margin-bottom: 0;
     font-size: 35px;
-    font-family: "Fredoka One", cursive;
+    font-family: $main-font, cursive;
     font-weight: 700;
   }
 }
@@ -46,7 +50,7 @@ h6 {
   background-color: $primary-color;
   font: {
     size: 13px;
-    family: "Fredoka One", cursive;
+    family: $main-font, cursive;
   }
   &::before {
     top: 0;
@@ -57,7 +61,7 @@ h6 {
     width: 25.25%;
     position: absolute;
     transition: 0.5s ease-in-out;
-    background-color: black;
+    background-color: $black;
   }
   &::after {
     top: 0;
@@ -68,7 +72,7 @@ h6 {
     width: 25.25%;
     position: absolute;
     transition: 0.5s ease-in-out;
-    background-color: black;
+    background-color: $black;
   }
   span {
     display: block;
@@ -82,7 +86,7 @@ h6 {
       width: 25.25%;
       position: absolute;
       transition: 0.5s ease-in-out;
-      background-color: black;
+      background-color: $black;
     }
     &::after {
       bottom: 0;
@@ -93,7 +97,7 @@ h6 {
       width: 25.25%;
       position: absolute;
       transition: 0.5s ease-in-out;
-      background-color: black;
+      background-color: $black;
     }
   }
   &:hover {
@@ -111,9 +115,4 @@ h6 {
       }
     }
   }
-}
-
-img {
-  height: auto;
-  max-width: 100%;
 }

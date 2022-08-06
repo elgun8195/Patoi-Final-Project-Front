@@ -30,9 +30,9 @@
     h2 {
       margin-bottom: 0;
       font-size: 35px;
-      color: black;
+      color: $black;
       font-weight: 700;
-      font-family: "Fredoka One", cursive;
+      font-family: $main-font, cursive;
     }
   }
 
@@ -49,20 +49,20 @@
       h3 {
         margin-bottom: 12px;
         font-size: 18px;
-        color: black;
+        color: $black;
         font-weight: 700;
-        font-family: "Fredoka One", cursive;
+        font-family: $main-font, cursive;
         a {
           transition: 0.5s;
-          color: black;
+          color: $black;
           text-decoration: none;
           outline: 0 !important;
         }
       }
       .price {
-        color: black;
+        color: $black;
         font-size: 13px;
-        font-family: "Fredoka One", cursive;
+        font-family: $main-font, cursive;
       }
       .rating {
         margin-top: 9px;
@@ -94,7 +94,7 @@
           text-align: center;
           border-radius: 5px;
           display: inline-block;
-          color: black;
+          color: $black;
           background-color: #facb11;
           font-weight: 600;
           font-size: 13px;
@@ -102,7 +102,7 @@
             display: block;
             font: {
               size: 17px;
-              font-family: "Fredoka One", cursive;
+              font-family: $main-font, cursive;
             }
           }
           &:last-child {
@@ -111,86 +111,7 @@
         }
       }
 
-      .default-btn {
-        border: 0;
-        z-index: 1;
-        overflow: hidden;
-        position: relative;
-        padding: 11px 30px;
-        border-radius: 5px;
-        letter-spacing: 0.5px;
-        display: inline-block;
-        color: white;
-        transition: 0.5s;
-        background-color: $primary-color;
-        font: {
-          size: 13px;
-          font-family: "Fredoka One", cursive;
-        }
-        &::before {
-          top: 0;
-          left: 0;
-          height: 0;
-          content: "";
-          z-index: -1;
-          width: 25.25%;
-          position: absolute;
-          transition: 0.5s ease-in-out;
-          background-color: black;
-        }
-        &::after {
-          top: 0;
-          left: 50%;
-          height: 0;
-          content: "";
-          z-index: -1;
-          width: 25.25%;
-          position: absolute;
-          transition: 0.5s ease-in-out;
-          background-color: black;
-        }
-        span {
-          display: block;
-
-          &::before {
-            bottom: 0;
-            height: 0;
-            left: 25%;
-            content: "";
-            z-index: -1;
-            width: 25.25%;
-            position: absolute;
-            transition: 0.5s ease-in-out;
-            background-color: black;
-          }
-          &::after {
-            bottom: 0;
-            left: 75%;
-            height: 0;
-            content: "";
-            z-index: -1;
-            width: 25.25%;
-            position: absolute;
-            transition: 0.5s ease-in-out;
-            background-color: black;
-          }
-        }
-        &:hover {
-          color: white;
-          background-color: $primary-color;
-
-          &::before,
-          &::after {
-            height: 100%;
-          }
-          span {
-            &::before,
-            &::after {
-              height: 100%;
-            }
-          }
-        }
-      }
+    
     }
   }
   .single-products-box {
@@ -275,7 +196,7 @@
               top: 50%;
               position: absolute;
               transform: translateY(-50%);
-              color: black;
+              color: $black;
               font-size: 15px;
             }
 
@@ -297,22 +218,22 @@
       h3 {
         margin-bottom: 12px;
         font-size: 18px;
-        color: black;
+        color: $black;
         font-weight: 700;
-        font-family: "Fredoka One", cursive;
+        font-family: $main-font, cursive;
         a {
           transition: 0.5s;
-          color: black;
+          color: $black;
           text-decoration: none;
           outline: 0 !important;
         }
       }
       .price {
-        color: black;
+        color: $black;
         font-size: 13px;
 
         .new-price {
-          font-family: "Fredoka One", cursive;
+          font-family: $main-font, cursive;
         }
         .old-price {
           color: $secondary-color;

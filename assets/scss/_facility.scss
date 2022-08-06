@@ -13,19 +13,17 @@
             border-right: none;
         }
     }
-    &.bg2 {
-        background-image: url(../images/bg3.jpg);
-    }
-}
-.single-facility-box {
-    text-align: center;
-    
-    img {
-        margin-bottom: 18px;
-        width: 50% 50%;
-    }
-    h3 {
-        font-size: 18px;
-        margin-bottom: 0;
+   
+
+    .single-facility-box {
+        text-align: center;
+        
+        img {
+            margin-bottom: 18px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
     }
 }

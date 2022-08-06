@@ -17,7 +17,7 @@
                     border: none;
                     font: {
                         size: 14.5px;
-                        family: "Fredoka One",cursive;
+                        family: $main-font,cursive;
                     };
                 }
             }
@@ -27,7 +27,7 @@
                 border-color: #eeeeee;
 
                 td {
-                    color: black;
+                    color: $black;
                     vertical-align: middle;
                     white-space: nowrap;
                     font: {

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   window.loopcounter = function (idWarp) {
     if (typeof idWarp != "undefined") {
       var date = $("." + idWarp).data("date");
@@ -174,11 +175,9 @@ mexpand4.addEventListener("click", () => {
     dropdown4.style.display = "none";
   }
 });
-
 inner.addEventListener("click", () => {
   optioninner.classList.toggle("active");
 });
-
 mmenu.addEventListener("click", () => {
   mmenu.classList.toggle("meanclose");
 
@@ -213,3 +212,84 @@ function slideImage() {
 
 window.addEventListener("resize", slideImage);
 // Product Detaisl Carousel
+
+
+//
+const countriesList = document.getElementById("countries");
+let countries;
+
+countriesList.addEventListener("change", newCountrySelection);
+
+function newCountrySelection(event) {
+  displayCountryInfo(event.target.value);
+}
+
+const link = "https://restcountries.com/v2/all";
+
+fetch(link)
+  .then((res) => res.json())
+  .then((data) => initialize(data))
+  .catch((err) => console.log("Error:", err));
+
+function initialize(countriesData) {
+  countries = countriesData;
+  let options = "";
+  countries.forEach(
+    (country) =>
+      (options += `<option value="${country.alpha3Code}">${country.name}</option>`)
+  );
+
+  countriesList.innerHTML = options;
+
+  countriesList.selectedIndex = Math.floor(
+    Math.random() * countriesList.length
+  );
+  displayCountryInfo(countriesList[countriesList.selectedIndex].value);
+}
+
+function displayCountryInfo(countryByAlpha3Code) {
+  const countryData = countries.find(
+    (country) => country.alpha3Code === countryByAlpha3Code
+  );
+  document.querySelector("#flag-container img").src = countryData.flag;
+  document.querySelector(
+    "#flag-container img"
+  ).alt = `Flag of ${countryData.name}`;
+}
+
+//////////////////////////////////4
+
+const countries1List = document.getElementById("countries1");
+let countries1; 
+countries1List.addEventListener("change", newCountrySelectione);
+
+function newCountrySelectione(event) {
+  displayCountryInfoe(event.target.value);
+}
+
+const link1="https://restcountries.com/v2/all";
+
+fetch(link1)
+.then(res => res.json())
+.then(data => initializ(data))
+.catch(err => console.log("Error:", err));
+
+function initializ(countries1Data) {
+  countries1 = countries1Data;
+  let option = "";
+ 
+  countries1.forEach(countr => option+=`<option value="${countr.alpha3Code}">${countr.name}</option>`);
+  countries1List.innerHTML = option;
+  countries1List.selectedIndex = Math.floor(Math.random()*countries1List.length);
+  displayCountryInfoe(countries1List[countries1List.selectedIndex].value);
+}
+
+function displayCountryInfoe(countryByAlpha3Cod) {
+  const countryDatae = countries1.find(countr => countr.alpha3Code === countryByAlpha3Cod);
+  document.querySelector("#flag-containere img").src = countryDatae.flag;
+  document.querySelector("#flag-containere img").alt = `Flag of ${countryDatae.name}`;  
+
+}
+
+////////////////////////////
+

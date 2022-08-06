@@ -23,7 +23,7 @@
 
             .form-check {
                 margin-bottom: 0;
-                color: black;
+                color: $black;
     
                 .form-check-input {
                     margin-top: .20em;
@@ -96,7 +96,7 @@
                 weight: 700;
             };
             &:hover {
-                background-color: black;
+                background-color: $black;
                 color: white;
             }
         }
@@ -149,7 +149,7 @@
                 weight: 700;
             };
             &:hover {
-                background-color: black;
+                background-color: $black;
                 color: white;
             }
         }

@@ -15,9 +15,9 @@ a{
     h2 {
       margin-bottom: 0;
       font-size: 35px;
-      color: black;
+      color: $black;
       font-weight: 700;
-      font-family: "Fredoka One", cursive;
+      font-family: $main-font, cursive;
     }
   }
 
@@ -62,9 +62,9 @@ a{
     h3 {
       font-size: 18px;
       margin-bottom: 0;
-      color: black;
+      color: $black;
       font-weight: 700;
-      font-family: "Fredoka One", cursive;
+      font-family: $main-font, cursive;
     }
   }
   span {
@@ -90,7 +90,7 @@ a{
 
     [class*="owl-"] {
       border: 1px solid #eeeeee !important;
-      color: black !important;
+      color: $black !important;
       background: transparent !important;
       transition: 0.5s;
       transform: translateY(-50%);

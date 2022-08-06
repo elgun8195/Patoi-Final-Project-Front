@@ -21,11 +21,11 @@
             background-color: transparent;
             font: {
                 size: 17px;
-                family: "Fredoka One",cursive;
+                family: $main-font,cursive;
             };
             &:not(.collapsed) {
                 box-shadow: unset;
-                color:black;
+                color:$black;
                 background-color: transparent;
             }
             span {
@@ -49,8 +49,8 @@
             position: relative;
 
             .title {
-                font-family: "Fredoka One",cursive;
-                color:black;
+                font-family: $main-font,cursive;
+                color:$black;
                 position: absolute;
                 top: 15px;
                 left: 0;
@@ -64,7 +64,7 @@
                     }
                 }
                 strong {
-                    color:black;
+                    color:$black;
                 }
             }
         }

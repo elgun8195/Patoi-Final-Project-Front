@@ -1,7 +1,7 @@
 .footer-area {
     padding-top: 100px;
     background: {
-        color: black;
+        color: $black;
         position: center center;
         repeat: no-repeat;
         size: cover;
@@ -164,143 +164,10 @@
         }
     }
 }
+ 
+ 
 
-/* Max width 767px */
-@media only screen and (max-width: 767px) {
-
-    .footer-area {
-        padding-top: 60px;
-    }
-    .single-footer-widget {
-        h3 {
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-        &.pl-4 {
-            padding-left: 0;
-        }
-        .custom-links {
-            li {
-                a {
-                    font-size: 13px;
-                }
-            }
-        }
-        .newsletter-form {
-            .input-newsletter {
-                padding-left: 12px;
-                font-size: 13px;
-                height: 45px;
-            }
-            button {
-                height: 45px;
-            }
-        }
-    }
-    .copyright-area {
-        margin-top: 35px;
-        padding: {
-            top: 25px;
-            bottom: 25px;
-        };
-    }
-
-}
-
-/* Min width 576px to Max width 767px */
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
-
-/* Min width 768px to Max width 991px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    .footer-area {
-        padding-top: 80px;
-    }
-    .single-footer-widget {
-        h3 {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        &.pl-4 {
-            padding-left: 0;
-        }
-        .custom-links {
-            li {
-                a {
-                    font-size: 14px;
-                }
-            }
-        }
-        .newsletter-form {
-            .input-newsletter {
-                font-size: 14px;
-            }
-        }
-    }
-    .copyright-area {
-        margin-top: 55px;
-        padding: {
-            top: 25px;
-            bottom: 25px;
-        };
-    }
-
-}
-
-/* Min width 992px to Max width 1199px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-    .single-footer-widget {
-        &.pl-4 {
-            padding-left: 2rem;
-        }
-        .custom-links {
-            li {
-                a {
-                    font-size: 14px;
-                }
-            }
-        }
-        .payment-types {
-            ul {
-                li {
-                    margin-right: 0;
-
-
-                    img {
-                        width: 25px;
-                    }
-                }
-            }
-        }
-        .newsletter-form {
-            .input-newsletter {
-                padding-left: 12px;
-                font-size: 14px;
-            }
-        }
-    }
-
-}
-
-/* Min width 1200px to Max width 1399px */
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
-    .single-footer-widget {
-        .payment-types {
-            ul {
-                li {
-                    margin-right: 4px;
-                }
-            }
-        }
-    }
-
-}
-
-/* Min width 1550px */
-@media only screen and (min-width: 1550px) {}
-
+ 
 
 .go-top {
     z-index: 4;

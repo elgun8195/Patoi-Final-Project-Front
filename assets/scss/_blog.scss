@@ -37,12 +37,12 @@
     h3 {
       font-size: 20px;
       margin-bottom: 0;
-      color: black;
+      color: $black;
       font-weight: 700;
-      font-family: "Fredoka One", cursive;
+      font-family: $main-font, cursive;
       a{
         transition:0.5s;
-        color: black;
+        color: $black;
         text-decoration: none;
         outline: 0 !important;
       }
@@ -168,7 +168,7 @@
           }
       }
       strong {
-          color: black;
+          color: $black;
       }
   }
   ul, ol {
@@ -264,7 +264,7 @@
               li {
                   margin-bottom: 0;
                   display: inline-block;
-                  color: black;
+                  color: $black;
 
                   span {
                       display: inline-block;
@@ -344,7 +344,7 @@ blockquote, .blockquote {
   p {
       line-height: 1.7;
       margin-bottom: 0;
-      color: black;
+      color: $black;
       font: {
           weight: 600;
           style: italic;
@@ -384,7 +384,7 @@ blockquote, .blockquote {
   }
   .comment-body {
       border-bottom: 1px dashed #eeeeee;
-      color: black;
+      color: $black;
       padding-bottom: 20px;
       margin-bottom: 20px;
       padding-left: 98px;
@@ -420,7 +420,7 @@ blockquote, .blockquote {
       position: relative;
       font: {
           size: 16px;
-          family: "Fredoka One",cursive;
+          family: $main-font,cursive;
       };
       .avatar {
           top: 4px;
@@ -480,7 +480,7 @@ blockquote, .blockquote {
           display: block;
           border-radius: 3px;
           padding: 0 15px 0 15px;
-          color: black;
+          color: $black;
           font-size: 16px;
           background-color: #f9f9f9;
 
@@ -555,11 +555,11 @@ blockquote, .blockquote {
               background: $primary-color;
               font: {
                   size: 13.5px;
-                  family: "Fredoka One",cursive;
+                  family: $main-font,cursive;
               };
               &:hover {
                   color: white;
-                  background-color: black;
+                  background-color: $black;
               }
           }
       }
