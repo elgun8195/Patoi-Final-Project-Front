@@ -802,6 +802,7 @@
 
 #banner .main-banner-area {
   padding-top: 10px;
+  background-image: url(../images/banners/banner-bg.jpg) !important;
   background-color: #cdebfc;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -2575,6 +2576,7 @@ blockquote cite, .blockquote cite {
 
 .footer-area {
   padding-top: 100px;
+  background-image: url(../images/bg2.jpg) !important;
   background-color: #2a2b39;
   background-position: center center;
   background-repeat: no-repeat;
